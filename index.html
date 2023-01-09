@@ -1,0 +1,685 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700" rel="stylesheet" />
+	<style type="text/css">
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+			font-family: 'Outfit', 'Manrope', Arial, sans-serif !important;
+			line-height: 1.25;
+			color: #000000;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td{
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+			border-spacing: 0 !important;
+		}
+
+		a {
+			text-decoration: none !important;
+			color: inherit;
+		}
+
+		td {
+			padding: 0;
+		}
+
+		* {
+			box-sizing: border-box !important;
+		}
+
+		.main {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.full-button {
+			display: inline-block !important;
+			background-color: #2841D8;
+			color: #ffffff;
+			height: 38px;
+			line-height: 1;
+			height: auto;
+			padding: 10px 24px 14px 24px;
+			border-radius: 6px;
+			font-size: 14px;
+			user-select: none;
+			transition: 0.25s ease-in-out !important;
+		}
+
+		.full-button:hover {
+			background-color: #4169E1;
+		}
+
+		.full-button__text {
+			font-weight: 700;
+			border-bottom: 1px solid #ffffff;
+		}
+
+		.main-image {
+			border-radius: 12px;
+			overflow: hidden;
+			background-color: #ffffff;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.text {
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.text__small {
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.text__big {
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		.text__title {
+			font-size: 28px;
+			font-weight: 700;
+		}
+
+		.logo img {
+			transition: 0.25s ease-in-out !important;
+		}
+
+		.logo:hover img {
+			opacity: 0.75 !important;
+		}
+
+		.link {
+			transition: 0.25s ease-in-out !important;
+		}
+
+		.link:hover {
+			opacity: 0.80 !important;
+		}
+
+		.link-image {
+			transition: 0.25s ease-in-out !important;
+		}
+
+		.link-image:hover {
+			opacity: 0.90 !important;
+		}
+
+		.goals {
+			table-layout: fixed !important;
+		}
+
+		.goals__box {
+			vertical-align: top !important;
+			padding: 15px;
+			width: 100%;
+			height: 180px;
+			background-color: #f5f5f5;
+			border-radius: 6px;
+		}
+
+		.main {
+			box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.gallery, .gallery > table {
+			table-layout: fixed !important;
+		}
+
+		.td-30{
+			height: 30px;
+		}
+		.td-60{
+			height: 60px;
+		}
+
+		@media (max-width:600px) {
+			.main{
+				width: 400px;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+			.link-image img{
+				width: 100%;
+				height: auto !important;
+			}
+			.td-30{
+				height: 1rem;
+			}
+			.td-60{
+				height: 2rem;
+			}
+			.img-full{
+				width: 100% !important;
+				height: auto !important;
+			}
+			.goals__box{
+				padding:1rem;
+			}
+			.p-r-10{
+				padding-right: .25rem !important;
+			}
+			.p-l-10{
+				padding-left: .25rem !important;
+			}
+			.p-t-20{
+				padding-top: 0.5rem !important;
+			}
+			.p-r-20{
+				padding-right: 0.5rem !important;
+			}
+			.m-t-20{
+				margin-top: 0.5rem !important;
+			}
+			.gallery-td-1{
+				width: 31.3%;
+			}
+			.gallery-td-2{
+				width: 33.3%;
+			}
+			.gallery-td-3{
+				width: 31.3%;
+			}
+			.text__title{
+				font-size: 24px;
+			}
+			.text__big{
+				font-size: 20px;
+			}
+			.text{
+				font-size: 14px;
+			}
+			.logo-text{
+				max-width: 170px !important;
+			}
+			.text__small{
+				font-size: 12px;
+			}
+			.btn-gallery{
+				padding: 18px 0px 18px 0px !important;
+				font-size: 12px !important;
+			}
+			.btn-gallery img{
+				margin-left: 4px !important;
+			}
+			.text-bottom br{
+				display: none;
+			}
+			.gallery-td-1{
+				width: 31%;
+			}
+			.gallery-td-2{
+				width: 33.8%;
+			}
+			.gallery-td-3{
+				width: 31%;
+			}
+		}
+
+		@media(max-width:420px){
+			.main {
+				box-shadow: none !important;
+			}
+			.own{
+				background-color: #ffffff !important;
+			}
+			.main{
+				width: 380px;
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+			}
+			.main.footer{
+				width: 100%;
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+			}
+			.logo-text {
+				max-width: 200px !important;
+			}
+			.header__logo{
+				width: 120px !important;
+				height: auto !important;
+			}
+			.p-r-075{
+				padding-right: 6px !important;
+			}
+		}
+
+		@media(max-width:400px){
+			.main{
+				width: 360px;
+			}
+			.full-button__text{
+				font-size: 12px !important;
+			}
+			.btn-gallery {
+				padding: 16px 0px 16px 0px !important;
+			}
+			.goals__box{
+				height: 210px !important;
+			}
+		}
+		@media (max-width:380px) {
+			.main{
+				width: 340px;
+			}
+			.full-button{
+				padding: 9px 16px 14px 20px;
+			}
+			.ukr-logo{
+				width: 100px !important;
+				height: auto !important;
+			}
+			.text__big {
+				font-size: 18px;
+			}
+			.text__small{
+				font-size: 12px;
+			}
+			.text{
+				font-size: 12px;
+			}
+			.logo-text {
+				max-width: 160px !important;
+			}
+			.text__title {
+				font-size: 22px;
+			}
+			.goals__box{
+				padding: 0.75rem;
+			}
+			.gallery-td-1{
+				width: 31%;
+			}
+			.gallery-td-2{
+				width: 33.8%;
+			}
+			.gallery-td-3{
+				width: 31%;
+			}
+			.btn-gallery{
+				font-size: 11px !important;
+				padding: 14px 0px 14px 0px !important;
+			}
+			.text-bottom{
+				padding-top: 1.33rem !important;
+				padding-bottom: 1.33rem !important;
+			}
+			.footer{
+				padding-top: 2rem !important;
+				padding-bottom: 2rem !important;
+			}
+		}
+		@media (max-width:360px){
+			.main{
+				width: 320px;
+			}
+			.btn-gallery{
+				font-size: 10px !important;
+				padding: 12px 0px 12px 0px !important;
+			}
+			.btn-gallery img{
+				width: auto !important;
+				max-height: 10px !important;
+			}
+		}
+		@media (max-width:340px){
+			.main{
+				width: 320px;
+			}
+			.text__big{
+				font-size: 16px;
+			}
+			.logo-text {
+				max-width: 200px !important;
+			}
+			.text__title{
+				font-size: 20px;
+			}
+		}
+		@media (max-width:320px){
+			.main{
+				width: 300px;
+			}
+			.text__big{
+				font-size: 16px;
+			}
+			.logo-text {
+				max-width: 200px !important;
+			}
+			.text__title{
+				font-size: 20px;
+			}
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<table class="own" style="border-collapse: initial;" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f5f5f5">
+		<tr>
+			<td>
+				<table class="main table" style="border-collapse: initial;" width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td class="td-30"></td>
+					</tr>
+					<tr>
+						<td align="center">
+							<table style="width: 100%;">
+								<tr>
+									<td align="left"><a class="logo" href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta" style="display: inline-block; line-height: 0;">
+									<img class="header__logo"
+										width="152"
+										height="38"
+										style="display: inline-block; border-radius: 6px; background-color: #ffffff;"
+										src="https://i.postimg.cc/dt5NLLmw/logo.png" alt="Omnic" /></a>
+									</td>
+									<td height="38" align="right">
+										<a href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta" class="full-button" style="color: #ffffff;">
+											<b class="full-button__text" style="color: #ffffff;">Read More</b>
+											<img style="display:inline; margin-left: 0.5rem; vertical-align: middle;"
+												width="7" height="12"
+												src="https://i.postimg.cc/XvrGppWy/white-arrow.png" alt="#" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-30"></td>
+					</tr>
+					<tr>
+						<td align="center" class="main-image">
+							<a class="link-image" href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta">
+								<img width="540" height="280" src="https://i.postimg.cc/286XMy6q/Frame-2.jpg"
+									alt="How to reduce parcel handling times in branches to 30 seconds?" />
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-60"></td>
+					</tr>
+					<tr>
+						<td align="center">
+							<table style="width: 100%;">
+								<tr>
+									<td align="left" style="vertical-align:top;">
+										<img class="ukr-logo" style="background-color: #ffffff; border-radius: 6px;" width="133" height="32" src="https://i.postimg.cc/43ZLmV7L/ukrposhta.png"
+											alt="Ukrposhta" />
+										<p class="text logo-text" style="line-height: 1.25; margin-top: 1rem; max-width:210px; color: #000000;">
+											Ukrposhta is the largest state-owned logistics company in Ukraine.
+										</p>
+									</td>
+									<td align="right" style="text-align: left; vertical-align: top;">
+										<p class="text__big" style="color: #000000;">
+											11,000
+										</p>
+										<p class="text__small" style="color: #000000;">
+											branches
+										</p>
+										<p class="text__big" style="color: #000000; margin-top: 1rem;">
+											50+
+										</p>
+										<p class="text__small" style="color: #000000; margin-right: 8px;">
+											services available
+										</p>
+									</td>
+									<td align="right" style="text-align: left; vertical-align: top;">
+										<p class="text__big" style="color: #000000;">
+											60,000
+										</p>
+										<p class="text__small" style="color: #000000;">
+											employees
+										</p>
+										<p class="text__big" style="color: #000000; margin-top: 1rem;">
+											5,300
+										</p>
+										<p class="text__small" style="color: #000000;">
+											vehicles
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-60"></td>
+					</tr>
+					<tr>
+						<td>
+							<table style="width: 100%;">
+								<tr>
+									<td align="left">
+										<p class="text__title" style="color: #000000;">Project <b style="color:#2841D8;">Goals</b></p>
+									</td>
+									<td align="right">
+										<a href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta" class="link">
+											<span class="text__small p-r-075"
+												style="padding-right:0.75rem; display:inline;font-weight: 700; line-height: 0; vertical-align: middle;">
+												<b style="border-bottom: 1px solid #000000; color: #000000;">Full Case Study</b>
+											</span>
+											<img style="vertical-align: middle; display: inline;" width="32" height="32"
+												src="https://i.postimg.cc/BQj0W4Qv/circle-arrow.png" alt="#" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-30"></td>
+					</tr>
+					<tr>
+						<td>
+							<table class="goals" style="width:100%">
+								<tr>
+									<td style="padding-right:10px;" class="p-r-10">
+										<table style="width: 100%;">
+											<tr>
+												<td class="goals__box">
+													<p class="text__big" style="color: #000000;">01</p>
+													<p class="text__small" style="color: #000000; margin-top: 0.25rem; line-height: 1.25;">Reduce the
+														customer service speed in post
+														offices to 30 seconds</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td style="padding-left: 10px;" class="p-l-10">
+										<table style="width: 100%;">
+											<tr>
+												<td class="goals__box">
+													<p class="text__big" style="color: #000000;">02</p>
+													<p class="text__small" style="color: #000000; margin-top: 0.25rem; line-height: 1.25;">Provide a
+														solution, and implement it in a short timeframe
+														of 1.5 months</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-right:10px; padding-top: 20px;" class="p-r-10 p-t-20">
+										<table style="width: 100%;">
+											<tr>
+												<td class="goals__box">
+													<p class="text__big" style="color: #000000;">03</p>
+													<p class="text__small" style="margin-top: 0.25rem; color: #000000; line-height: 1.25;">Build a system
+														that allows us to analyze the work of
+														parcel lockers and receive detailed reports</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td style="padding-left:10px; padding-top:20px;" class="p-l-10 p-t-20">
+										<table style="width: 100%;">
+											<tr>
+												<td class="goals__box">
+													<p class="text__big" style="color: #000000;">04</p>
+													<p class="text__small" style="color: #000000; margin-top: 0.25rem; line-height: 1.25;">Develop the proper
+														communications within the company, so
+														that employees are excited about using parcel locker and
+														understand the main
+														value for them and their customers.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-60"></td>
+					</tr>
+					<tr>
+						<td>
+							<table style="width: 100%;">
+								<tr>
+									<td align="left">
+										<p class="text__title" style="color: #000000;">Project <b style="color:#2841D8;">Results</b></p>
+									</td>
+									<td align="right">
+										<a href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta" class="link">
+											<span class="text__small p-r-075"
+												style="padding-right:0.75rem; display:inline;font-weight: 700; line-height: 0; vertical-align: middle;">
+												<b style="border-bottom: 1px solid #000000; color: #000000;">Full Case Study</b>
+											</span>
+											<img style="vertical-align: middle; display: inline;" width="32" height="32"
+												src="https://i.postimg.cc/BQj0W4Qv/circle-arrow.png" alt="#" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-30"></td>
+					</tr>
+					<tr>
+						<td>
+							<table style="width: 100%;" class="gallery">
+								<tr>
+									<td>
+										<table style="width: 100%;">
+											<tr>
+												<td style="padding-right: 10px;" class="p-r-10">
+													<img width="260" height="260" style="border-radius:6px;" class="img-full"
+														src="https://i.postimg.cc/sxmBVFWD/gallery-1.jpg" alt="#" />
+												</td>
+												<td style="padding-left: 10px;" class="p-l-10">
+													<img width="260" height="260" style="border-radius:6px;" class="img-full"
+														src="https://i.postimg.cc/Y2WbtdjN/gallery-2.jpg" alt="#" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table style="width: 100%;">
+											<tr>
+												<td style="padding-top: 20px; padding-right:20px; vertical-align: top;" class="gallery-td-1 p-t-20 p-r-20">
+													<img width="160" height="80"
+														src="https://i.postimg.cc/prb7P4H7/gallery-3.jpg" alt="#"
+														style="border-radius:6px;" class="img-full" />
+													<img width="160" height="160"
+														src="https://i.postimg.cc/4xN04pDJ/gallery-4.jpg" alt="#"
+														style="margin-top:20px; border-radius:6px;" class="img-full m-t-20" />
+												</td>
+												<td style="padding-top: 20px; padding-right:20px; vertical-align: top;" class="gallery-td-2 p-t-20 p-r-20">
+													<img width="180" height="260"
+														src="https://i.postimg.cc/0NzHDP5F/gallery-5.jpg" alt="#"
+														style="border-radius:6px;" class="img-full" />
+												</td>
+												<td style="padding-top: 20px; vertical-align: top;" class="gallery-td-3 p-t-20">
+													<img width="160" height="160" alt="#"
+														src="https://i.postimg.cc/TYQksppB/gallery-6.jpg"
+														style="border-radius:6px;" class="img-full" />
+													<a href="https://b2b.omnic.net/ukrposhta-case-en?utm_source=emailnewsletter&utm_medium=case&utm_campaign=Ukrposhta" class="full-button btn-gallery img-full m-t-20"
+														style="width:160px; box-sizing: initial !important; padding:30px 0px 36px 0px; text-align: center; margin-top: 20px; color: #ffffff; vertical-align: middle;">
+														Full Case Study
+														<img style="display:inline; margin-left: 0.5rem; vertical-align: top;"
+															width="7" height="12" alt="#"
+															src="https://i.postimg.cc/XvrGppWy/white-arrow.png"
+															 />
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-60"></td>
+					</tr>
+				</table>
+				<table class="main table footer" style="border-collapse: initial; padding-top: 30px; padding-bottom: 30px;" width="600" bgcolor="#000000"
+					cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td align="center">
+							<img class="header__logo" width="143" height="30" src="https://i.postimg.cc/DysC2Bpk/logo-white.png" alt="Omnic" />
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<p class="text text-bottom" style="color: #ffffff; padding-top: 30px; padding-bottom: 30px;">
+								We transform and innovate to set people free from routine tasks <br /> to spend this time
+								on the things that really matter
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<a class="link" href="#" style="margin-right: 20px;">
+								<img style="display:inline-block;" width="30" height="30"
+									src="https://i.postimg.cc/GpSPPygx/in.png" alt="LinkedIn" />
+							</a>
+							<a class="link" href="#">
+								<img style="display:inline-block;" width="32" height="24"
+									src="https://i.postimg.cc/Pxgm9kjL/mail.png" alt="Email" />
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
